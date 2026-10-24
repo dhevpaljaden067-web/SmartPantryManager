@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="App Settings"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <Switch
+        android:id="@+id/switchNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable Expiring Soon Alerts"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preferred Measurement Unit:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupUnits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/radioMetric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metric (kg, litres, grams)"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioImperial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imperial (lbs, ounces)" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSaveSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Settings" />
+
+</LinearLayout>

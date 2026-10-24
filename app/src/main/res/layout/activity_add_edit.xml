@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Pantry Ingredient"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/etIngredientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingredient Name (e.g., Rice, Milk)"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity (e.g., 2.5)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unit (e.g., kg, litres, packets)"
+        android:inputType="text"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnSaveIngredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save to Pantry"
+        android:backgroundTint="@android:color/holo_green_dark" />
+
+</LinearLayout>
